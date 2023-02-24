@@ -39,7 +39,7 @@ reaper.SetMediaTrackInfo_Value(HOATrack, "I_NCHAN" , HOABusChannels)  -- change 
 
 for ti=0,trackSelCount-1 do
   CurTrack = reaper.GetSelectedTrack(0, ti)
-  
+  reaper.CreateTrackSend(CurTrack, HOATrack )
 end
 
 
